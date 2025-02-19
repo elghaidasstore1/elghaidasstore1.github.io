@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elghaidas Store</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Pacifico&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom Font -->
+    <link href="custom-font.ttf" rel="stylesheet" type="text/css">
+    <!-- Font Awesome for WhatsApp icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('Espressonal.otf');
+        }
+
+        body {
+            background-color: #fef6e4; /* Smooth creamy background */
+            font-family: 'Pacifico', cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+        h4 {
+            font-family: 'CustomFont';
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 0;
+            background-color: #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .header h1 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 3.8rem;
+            margin-left: 20px;
+            color: #6c4f3d;
+            letter-spacing: 2px;
+        }
+
+        .header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            padding: 0 15px;
+        }
+
+        .product-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer p {
+            font-family: 'CustomFont', sans-serif;
+            color: #6c4f3d;
+            font-size: 1rem;
+        }
+
+        .info-section {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .info-section h3 {
+            color: #6c4f3d;
+            font-family: 'Amatic SC', cursive;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .info-section p {
+            font-family: 'Roboto Slab', serif;
+            color: #6c4f3d;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .info-section .highlight {
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            font-size: 28px;
+            z-index: 100;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+
+        @media (max-width: 768px) {
+            .product-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .header h1 {
+                font-size: 2.8rem;
+            }
+
+            .footer p {
+                font-size: 0.9rem;
+            }
+
+            .info-section {
+                padding: 20px;
+            }
+
+            .info-section h3 {
+                font-size: 2rem;
+            }
+
+            .info-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <img src="logo.jpg" alt="Logo">
+        <h1>Elghaidas Store</h1>
+    </header>
+
+    <!-- Product Gallery -->
+    <section class="product-gallery">
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product 1">
+        </div>
+        <div class="product-card">
+            <img src="product2.jpg" alt="Product 2">
+        </div>
+        <div class="product-card">
+            <img src="product3.jpg" alt="Product 3">
+        </div>
+        <div class="product-card">
+            <img src="product4.jpg" alt="Product 4">
+        </div>
+        <div class="product-card">
+            <img src="product5.jpg" alt="Product 5">
+        </div>
+        <div class="product-card">
+            <img src="product6.jpg" alt="Product 6">
+        </div>
+    </section>
+
+    <!-- Information Section -->
+    <section class="info-section">
+        <h3>Bismillah</h3>
+        <p>Assalamualaikum Alaikum</p>
+        <p>Mohon izin untuk berbagi info dan penawaran.. <span class="highlight">MIZAR DAN MARSYA</span></p>
+
+        <h4>MIZAR DAN MARSYA</h4>
+        <p>Adalah duo Produk Kesehatan terekomendasi yang alami dan syar'i sebagai ikhtiar pencegahan (prefentif) dan pengobatan (kuratif) sakit medis maupun non medis (megis/aneh/tidak wajar).</p>
+
+        <h4>🌼MIZAR (Minyak Zaitun Ruqyah)🌼</h4>
+        <p>Adalah perpaduan antara Minyak zaitun pilihan dan Ruqyah Syar'iyyah oleh para praktisi ruqyah syar’iyah, insya Allah bisa membantu mengatasi keluhan-keluhan yang di akibatkan oleh penyakit-penyakit medis dan non medis (megis), seperti penyakit yang di akibatkan oleh Sihir, guna-guna ataupun rasa cemas/was-was, mimpi buruk kesurupan dan penyakit-penyakit medis/kedokteran.</p>
+
+        <h4>🌼MARSYA (MADU RUQYAH)🌼</h4>
+        <p>Adalah MADU ASLI dan MURNI (tanpa campuran) yang telah di ruqyah secara Syar'i, menjadikan MARSYA sangat pas untuk Terapy baik sebagai obat maupun pencegahan dan pemeliharaan kesehatan dan keafiatan badan.</p>
+
+        <p>MARSYA merupakan produk berkualitas yang InsyaAllah bisa mengatasi PENYAKIT MEDIS dan NON MEDIS.</p>
+
+        <hr>
+        <p>📚 Boleh kunjungi dan 'like' Fanpage kami <br>
+            👉 <a href="https://www.facebook.com/jualminyakzaitunruqyah" target="_blank" class="highlight">Elghaida's Store</a> 👈
+        </p>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/6285312419192?text=Bismillah,%0AAssalamu'alaikum%20warrahmatullah%0A%0AAdmin,%20saya%20ingin%20order%20produk%20Elghaida's%20Store" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Elghaidas Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
