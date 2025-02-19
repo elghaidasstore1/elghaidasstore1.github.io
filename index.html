@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +18,6 @@
             font-family: 'CustomFont';
             src: url('Espressonal.otf');
         }
-
         body {
             background-color: #fef6e4; /* Smooth creamy background */
             font-family: 'Pacifico', cursive;
@@ -176,11 +174,49 @@
                 font-size: 1rem;
             }
         }
+
+        .testimonials-section {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .testimonials-section h3 {
+            color: #6c4f3d;
+            font-family: 'Amatic SC', cursive;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .testimonials-section p {
+            font-family: 'Roboto Slab', serif;
+            color: #6c4f3d;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .testimonial-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .testimonial-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
     </style>
 </head>
-
 <body>
-
     <!-- Header -->
     <header class="header">
         <img src="logo.jpg" alt="Logo">
@@ -232,6 +268,29 @@
         </p>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <h3>𝗕𝗘𝗕𝗘𝗥𝗔𝗣𝗔 𝗧𝗘𝗦𝗧𝗜𝗠𝗢𝗡𝗜 𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔 𝗠𝗜𝗭𝗔𝗥 𝗠𝗜𝗡𝗬𝗔𝗞 𝗭𝗔𝗜𝗧𝗨𝗡 𝗥𝗨𝗤𝗬𝗔𝗛</h3>
+        <p>✔ SRIYATI – Bantar Kemang Bogor, Kolesterol yang tinggi, tangan suka sakit dan kram, Alhamdulillah setelah konsumsi MIZAR kolesterolnya turun, tangan yang sakit dan kram sudah sembuh.</p>
+        <p>✔ MADRIS Sukaraja Bogor Suka kejang-kejang kemudian pingsan. Diagnosa dokter ada penyempitan pembuluh darah ke otak. Setelah konsumsi MIZAR kejang-kejang agak berkurang dan jarang pingsan lagi.</p>
+        <p>✔ REYNOLD-Cimahpar Bogor, Istri sering Mual dan mengalami vertigo dan keponakan yang sakit tifus. Alhamdulillah setelah konsumsi MIZAR mual-mual dan vertigonya hilang dan keponakan saya sembuh dari penyakit tifus nya. bit.ly/elghaidashop-order</p>
+        <p>✔ HAMAN – Bogor, kakak Perempuanya mengalami pengeroposan tulang dari kaki sampai paha, gejala stroke, dan terasa sakit pada kaki dan tangan. Setelah menggunakan MIZAR Alhamdulillah berangsur-angsur sakitnya agak berkurang.</p>
+        <p>✔ ARMAN Bojong Gede, Istri sering buang air besar setiap hari bahkan sampai 20 kali sehari dan megeluarkan darah. Alhamdulillah setelah mengkonsumsi MIZAR buang air besarnya agak berkurang dan tidak keluar darah lagi.</p>
+        <p>✔ DEDE NOVAL – Cikaret, Flex pada paru-paru dan mengalami epilepsi (ayan). Alhamdulillah stelah mengkonsumsi MIZAR sudah hampir sembuh.</p>
+        <p>✔ LAYLA – Cibubur, Penyakit kelenjar getah bening, mata katarak, typus, sampai rambutnya rontok. Alhamdulillah setelah konsumsi MIZAR, rambut yang tadinya rontok mulai tumbuh kembali.</p>
+        <p>✔ ANI/IBU EMA – Yasmin, Sering diganggu makhluk halus, menampakkan diri dengan wajah yang menyeramkan dan mencolok. Alhamdulillah setelah konsumsi MIZAR diminum dan di balurkan tidak pernah diganggu lagi.</p>
+        <p>✔ MAYA– Ciomas, Sering terasa sangat sakit pada saat datang Bulan. Setelah konsumsi MIZAR. Alhamdulillah saat datang bulan sakitnya agak berkurang, mudah-mudahan sakit nya hilang pada saat datang bulan lagi.</p>
+        <p>✔ ANITA SUPANDI–  Bogor, Bertahun-tahun setelah menikah tidak bisa berhubungan suami istri. Sudah diruqyah, sembuh, tapi gangguan sihirnya kembali lagi begitu terus bertahun-tahun hingga akhirnya mencoba menggunakkan MIZAR. Alhamdulillah dengan izin Alloh Pengaruhnya sihirnya hilang, sebelumnya didahului dengan BAB Darah selama 4 hari.</p>
+
+        <div class="testimonial-images">
+            <img src="testi1.jpg" alt="Testimonial 1">
+            <img src="testi2.jpg" alt="Testimonial 2">
+            <img src="testi3.jpg" alt="Testimonial 3">
+            <img src="testi4.jpg" alt="Testimonial 4">
+            <img src="testi5.jpg" alt="Testimonial 5">
+        </div>
+    </section>
+
     <!-- WhatsApp Button -->
     <a href="https://wa.me/6285312419192?text=Bismillah,%0AAssalamu'alaikum%20warrahmatullah%0A%0AAdmin,%20saya%20ingin%20order%20produk%20Elghaida's%20Store" target="_blank" class="whatsapp-btn">
         <i class="fab fa-whatsapp"></i>
@@ -246,6 +305,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
 
+</body>
 </html>
